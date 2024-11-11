@@ -3,9 +3,12 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page
+Välkommen till min sidan i kursen Design!
 ==========================
 
-The source for this page is in `content/index.md`.
 
-This is a sample home page written in markdown with some frontmatter defined.
+## 
+
+Hej! Jag heter Viktoriia och detta är min hemsida. Jag är 28 år och bor i Åkersberga utanför Stockholm. 
+
+![Bild på mig](assets/img/me.jpeg)
