@@ -1,0 +1,147 @@
+@use '../../node_modules/normalize.css/normalize' as *;
+@use 'variables' as *;
+@use 'blockquotes';
+@use 'code';
+
+@import '../../shared/fontawesome/scss/fontawesome';
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Merienda:wght@300..900&display=swap');
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+* {
+  box-sizing: border-box;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Merienda', cursive;
+  color: $font-color;
+  text-align: center;
+  font-size: $font-size;
+}
+
+body {
+  background-color: $background-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Leckerli One', cursive;
+  text-align: center;
+  font-size: $font-size-main;
+  font-style: normal;
+}
+
+ol,
+ul {
+  padding-left: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.header,
+.footer {
+  flex: 0 0 auto;
+}
+
+.header,
+.site-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title,
+.logo {
+  padding: 10px;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    width: 30px;
+  }
+}
+
+.title * {
+  color: #030303;
+}
+
+.title p {
+  font-style: italic;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #802677;
+  padding: 2px;
+  height: 20px;
+}
+
+.footer a {
+  color: #d8a7d3;
+}
+
+.footer .social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer .social a i {
+  font-size: 24px;
+  padding: 5px;
+}
+
+p,
+td,
+th,
+li,
+dd {
+  text-align: justify;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+img {
+  width: 400px;
+  height: auto;
+  max-width: 80%;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: #d8a7d3;
+  }
+
+  .logo {
+    width: 40px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
